@@ -4,7 +4,6 @@ import {
   Menu,
   X,
   ChevronDown,
-  MapPin,
   LogOut,
   User,
   Settings,
@@ -125,12 +124,16 @@ const Navbar = () => {
     <nav className={navClass}>
       <div className="container-custom">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <MapPin className={`h-6 w-6 ${logoClass}`} />
+            <Link to="/" className="flex items-center space-x-2">
+            <img 
+              src="/minangkabau3.png" 
+              alt="Minangkabau Logo" 
+              className={`h-6 w-6 object-contain ${logoClass}`} 
+            />
             <span className={`text-xl font-heading font-bold ${logoClass}`}>
               Solok Selatan
             </span>
-          </Link>
+            </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
